@@ -1,0 +1,42 @@
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+DROP TABLE IF EXISTS `character_glyphs`;
+CREATE TABLE `character_glyphs` (
+  `guid` int(10) unsigned NOT NULL,
+  `spec` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `glyph1` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `glyph2` smallint(5) unsigned DEFAULT '0',
+  `glyph3` smallint(5) unsigned DEFAULT '0',
+  `glyph4` smallint(5) unsigned DEFAULT '0',
+  `glyph5` smallint(5) unsigned DEFAULT '0',
+  `glyph6` smallint(5) unsigned DEFAULT '0',
+  `glyph7` smallint(5) unsigned DEFAULT '0',
+  `glyph8` smallint(5) unsigned DEFAULT '0',
+  `glyph9` int(11) unsigned DEFAULT '0',
+  PRIMARY KEY (`guid`,`spec`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+LOCK TABLES `character_glyphs` WRITE;
+/*!40000 ALTER TABLE `character_glyphs` DISABLE KEYS */;
+INSERT INTO `character_glyphs` VALUES (1,0,0,0,0,0,0,0,0,0,0),(5,0,0,0,0,0,0,0,0,0,0),(6,0,0,0,0,0,0,0,0,0,0),(6,1,0,0,0,0,0,0,0,0,0),(8,0,0,0,0,0,0,0,0,0,0),(10,0,0,0,0,0,0,0,0,0,0),(17,0,0,0,0,0,0,0,0,0,0),(18,0,0,0,0,0,0,0,0,0,0),(20,0,0,0,0,0,0,0,0,0,0),(22,0,0,0,0,0,0,0,0,0,0),(23,0,0,0,0,0,0,0,0,0,0),(24,0,0,0,0,0,0,0,0,0,0),(25,0,0,0,0,0,0,0,0,0,0),(29,0,0,0,0,0,0,0,0,0,0),(34,0,0,0,0,0,0,0,0,0,0),(35,0,0,0,0,0,0,0,0,0,0),(36,0,0,0,0,0,0,0,0,0,0),(36,1,0,0,0,0,0,0,0,0,0),(38,0,0,0,0,0,0,0,0,0,0),(38,1,0,0,0,0,0,0,0,0,0),(40,0,0,0,0,0,0,0,0,0,0),(41,0,0,0,0,0,0,0,0,0,0),(42,0,0,0,0,0,0,0,0,0,0),(43,0,0,0,0,0,0,0,0,0,0),(44,0,0,0,0,0,0,0,0,0,0),(45,0,0,0,0,0,0,0,0,0,0),(46,0,0,0,0,0,0,0,0,0,0),(47,0,0,0,0,0,0,0,0,0,0),(51,0,0,0,0,0,0,0,0,0,0),(51,1,0,0,0,0,0,0,0,0,0),(54,0,0,0,0,0,0,0,0,0,0),(55,0,0,0,0,0,0,0,0,0,0),(56,0,0,0,0,0,0,0,0,0,0),(56,1,0,0,0,0,0,0,0,0,0),(69,0,0,0,0,0,0,0,0,0,0),(81,0,0,0,0,0,0,0,0,0,0),(97,0,0,0,0,0,0,0,0,0,0),(98,0,0,0,0,0,0,0,0,0,0),(100,0,0,0,0,0,0,0,0,0,0),(102,0,0,0,0,0,0,0,0,0,0),(103,0,0,0,0,0,0,0,0,0,0),(106,0,0,0,0,0,0,0,0,0,0),(115,0,0,0,0,0,0,0,0,0,0),(119,0,0,0,0,0,0,0,0,0,0);
+/*!40000 ALTER TABLE `character_glyphs` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
